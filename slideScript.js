@@ -12,10 +12,16 @@ rightBtn.addEventListener('click', () => {
     activeSlide = 0
   }
   if (activeSlide === 5){
+    quizContainers.forEach(element => {
+      element.style.display = 'block';
+    });
     quizContainers.forEach(function(container){
         container.style.position = 'relative';
-    });
+    }); 
   } else{
+    quizContainers.forEach(element => {
+      element.style.display = 'none';
+    });
     quizContainers.forEach(function(container){
         container.style.position = 'static';
     });
@@ -32,10 +38,16 @@ leftBtn.addEventListener('click', () => {
     activeSlide = slides.length - 1
   }
   if (activeSlide === 5){
+    quizContainers.forEach(element => {
+      element.style.display = 'block';
+    });
     quizContainers.forEach(function(container){
         container.style.position = 'relative';
     });
   } else{
+    quizContainers.forEach(element => {
+      element.style.display = 'none';
+    });
     quizContainers.forEach(function(container){
         container.style.position = 'static';
     });

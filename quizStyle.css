@@ -3,6 +3,10 @@
 .quiz-container{
   align-items: center;
   justify-content: center;
+  width: 70vw;
+  height: 70vh;
+
+  background-color: aliceblue;
 }
 
 .quiz-header {
@@ -30,6 +34,7 @@ h2 {
 }
 
 .quizButton {
+  margin-top: 8vh;
   background-color: #8e44ad;
   color: #fff;
   border: none;
